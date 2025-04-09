@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'Bugaki';
+    src: url('fonts/Bugaki.ttf') format('truetype');
+  }
+
+  html, body {
+    overflow-y: hidden;
+}
+
+body.fundo-mel {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bugaki', sans-serif;
+    background-color: #ffde59;
+    min-height: 100vh;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.mel-topo {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    margin-top: 180px;
+    padding: -50px;
+}
+
+.texto-explicativo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #cd7a00 ;
+    margin-bottom: 30px;
+}
+
+.titulo {
+    font-size: 55px;
+    font-weight: bold;
+    color: #cd7a00 ;
+    margin-bottom: 40px;
+}
+
+.input-tema input {
+    padding: 15px 20px;
+    width: 60%;
+    max-width: 500px;
+    border-radius: 25px;
+    border: none;
+    font-family: 'Bugaki', sans-serif;
+    font-size: 20px;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.abelha-esquerda {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    z-index: 2;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.abelha-esquerda img {
+    width: 150px;
+    height: auto;
+}
+
+.abelha-direita {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 2;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.abelha-direita img {
+    width: 330px;
+    height: auto;
+}
+
+.botao-pronto {
+    margin-top: 30px;
+}
+
+.botao-pronto button {
+    padding: 15px 40px;
+    background-color: #d88d00;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Bugaki', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    overflow-y: hidden;
+}
+
+.botao-pronto button:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .mel-topo {
+      height: auto;
+    }
+  
+    .texto-explicativo {
+      font-size: 18px;
+      margin: 20px;
+    }
+  
+    .titulo {
+      font-size: 32px;
+      line-height: 1.2;
+      margin: 20px;
+    }
+  
+    .input-tema input {
+      width: 80%;
+      font-size: 18px;
+    }
+  
+    .botao-pronto button {
+      font-size: 18px;
+      padding: 12px 30px;
+    }
+  
+    .abelha-esquerda {
+      top: 30px;
+      left: 10px;
+    }
+  
+    .abelha-esquerda img {
+      width: 100px;
+    }
+  
+    .abelha-direita {
+      bottom: 20px;
+      right: 10px;
+    }
+  
+    .abelha-direita img {
+      width: 200px;
+    }
+  
+    .container {
+      margin-top: 150px;
+      padding: 0 20px;
+    }
+  }
+  

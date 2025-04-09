@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Bugaki';
+    src: url('fonts/Bugaki.ttf') format('truetype');
+  }
+
+  html, body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Bugaki', sans-serif;
+
+  }
+  
+  body.fundo-laranja {
+    margin: 0;
+    padding: 0;
+    background-color: #f9a500;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  
+  .container {
+    width: 100vw;
+    height: 76vh;
+    max-width: 900px;
+    background-color: #ffde59;
+    padding: 50px 100px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    z-index: 3;
+    position: relative;
+  }
+  
+  .titulo {
+    color: #cd7a00;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  
+  .carregando-container {
+    background-color: white;
+    padding: 80px 0px 130px 0px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+.texto-carregando {
+    font-size: 22px;
+    color: black;
+    margin: 0;
+}
+  
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #d88d00;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: girar 1s linear infinite;
+    margin: auto;
+  }
+  
+  @keyframes girar {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 40px 30px;
+    }
+  
+    .titulo {
+      font-size: 36px;
+    }
+  
+    .texto-carregando {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 30px 20px;
+    }
+  
+    .titulo {
+      font-size: 28px;
+    }
+  
+    .texto-carregando {
+      font-size: 18px;
+    }
+  
+    .loader {
+      width: 50px;
+      height: 50px;
+      border-width: 6px;
+    }
+  }
+  

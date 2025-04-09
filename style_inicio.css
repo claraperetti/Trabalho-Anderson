@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Bugaki';
+    src: url('fonts/Bugaki.ttf') format('truetype');
+  }
+  
+body.fundo-laranja {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bugaki', sans-serif;
+    min-height: 100vh;
+    background-color: #f9a500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+}
+
+
+.colmeiadireita {
+    right: 0;
+    margin: -190px;
+    margin-left: 999px;
+}
+
+.colmeiaesquerda {
+    left: 0;
+    margin: -190px;
+    margin-right: 999px;
+}
+
+.colmeiadireita img,
+.colmeiaesquerda img {
+    width: 350px;
+    height: auto;
+    z-index: 1;
+}
+
+.caixa-amarela {
+    width: 80vw;
+    height: 85vh;
+    background-color: #ffde59;
+    padding: 0px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    
+}
+
+.logo {
+    height: 25vh;
+    object-fit: contain;
+    margin: 0;
+}
+
+.mel {
+    height: 200vh;
+    object-fit: contain;
+}
+
+.botao-iniciar {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding: 20px 50px;
+    background-color: #d88d00;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Bugaki', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.botao-iniciar:hover {
+    transform: scale(1.05);
+}
+
+
+.logo {
+    height: 410px;
+    object-fit: contain;
+    margin-top: -1100px;
+    margin-bottom: -40px;
+    padding: 30px;
+}
+
+.mel {
+    height: 1100px;
+    width: 1100px;
+    margin-top: -34px;
+}
+
+
+@media (max-width: 768px) {
+    .colmeiadireita,
+    .colmeiaesquerda {
+      display: none; 
+    }
+  
+    .caixa-amarela {
+      width: 90vw;
+      height: auto;
+      padding: 30px 20px;
+    }
+  
+    .logo {
+      height: auto;
+      width: 80%;
+      max-width: 300px;
+      margin-top: -100px;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+  
+    .mel {
+      width: 80%;
+      height: auto;
+      max-height: 300px;
+      margin-top: -10px;
+    }
+  
+    .botao-iniciar {
+      font-size: 18px;
+      padding: 15px 30px;
+      margin-bottom: 20px;
+    }
+  
+    body::before {
+      height: 80px;
+    }
+  }
+  
