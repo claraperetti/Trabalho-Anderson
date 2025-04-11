@@ -17,8 +17,9 @@ btn.addEventListener("click", (event) => {
     )
   }).then(
     setTimeout(() => {
+      localStorage.setItem("tema", input.value)
       localStorage.setItem("isPageAguarde", "true")
       window.location.href = "aguarde.html"
-    }, 1000)
+    }, 500)
   )
 })

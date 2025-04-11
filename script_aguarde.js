@@ -10,5 +10,5 @@ window.addEventListener("DOMContentLoaded", () => {
           localStorage.setItem("jsonQuestions", JSON.stringify(data))
           window.location.href = "pergunta.html"
         })
-    }, 5000)
+    }, 8000)
   })

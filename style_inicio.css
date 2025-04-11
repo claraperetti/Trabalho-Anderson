@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
 @font-face {
     font-family: 'Bugaki';
     src: url('fonts/Bugaki.ttf') format('truetype');
@@ -28,15 +30,15 @@ body::before {
 
 
 .colmeiadireita {
+    position: absolute;
     right: 0;
-    margin: -190px;
-    margin-left: 999px;
+    top: 0;
 }
 
 .colmeiaesquerda {
-    left: 0;
-    margin: -190px;
-    margin-right: 999px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .colmeiadireita img,
@@ -94,16 +96,13 @@ body::before {
 
 .logo {
     height: 410px;
-    object-fit: contain;
     margin-top: -1100px;
-    margin-bottom: -40px;
     padding: 30px;
 }
 
 .mel {
-    height: 1100px;
-    width: 1100px;
-    margin-top: -34px;
+    margin-top: -4px;
+    object-fit: contain;
 }
 
 

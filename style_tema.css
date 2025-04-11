@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'Bugaki';
     src: url('fonts/Bugaki.ttf') format('truetype');
-  }
+}
 
-  html, body {
+html, body {
     overflow-y: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 body.fundo-mel {
-    margin: 0;
-    padding: 0;
     font-family: 'Bugaki', sans-serif;
     background-color: #ffde59;
     min-height: 100vh;
