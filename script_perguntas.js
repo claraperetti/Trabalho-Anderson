@@ -12,6 +12,7 @@ let jsonQuestions = localStorage.getItem("jsonQuestions")
 
 let jsonParseQuestions = JSON.parse(jsonQuestions)
 
+let pontuacao_game = 0
 
 let questionArray = []
 
@@ -51,6 +52,10 @@ function atualizarPagina() {
     text_alternativas.forEach(element => {
         element.onclick = () => {
 
+            if(element.innerHTML == response_correct){
+                pontuacao_game++
+            }
+
             text_alternativas.forEach(e => {
                 if (e.innerHTML == response_correct) {
                     e.classList.add("correct")
@@ -73,21 +78,14 @@ function atualizarPagina() {
                     atualizarPagina()
                 } else {
                     localStorage.removeItem("jsonQuestions")
-                    let tema = localStorage.getItem("tema")
-                    let url = "https://backend-quiz-production.up.railway.app/quiz/category/" + tema
-                    console.log(url)
-                    fetch(url, {
-                        method: "DELETE"
-                    })
-                    localStorage.removeItem("tema")
-                    alert("Voce terminou o quiz!", window.location.href= "inicio.html")
+                    localStorage.setItem("pontuacao", pontuacao_game)
+                    window.location.href= "final.html"
                 }
 
             }
         }
     })
 }
-
 
 
 
